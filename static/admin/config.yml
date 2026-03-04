@@ -1,23 +1,17 @@
-# Настройка связи с сервером
 backend:
   name: git-gateway
-  branch: main # Твоя ветка в GitHub
-
-# Настройка картинок
+  branch: main # ЗАМЕНИ НА master, ЕСЛИ В GITHUB ВЕТКА НАЗЫВАЕТСЯ ТАК
+  
 media_folder: "static/uploads"
 public_folder: "/uploads"
 
-# Настройка контента
 collections:
   - name: "docs"
-    label: "База знаний (Docs)"
-    folder: "content/docs"
+    label: "Документация"
+    folder: "content/docs" # Проверь, что папка в VS Code называется именно так
     extension: "md"
     format: "frontmatter"
-    create: true # Позволяет создавать новые страницы
-    slug: "{{slug}}"
+    create: true
     fields:
       - {label: "Заголовок", name: "title", widget: "string"}
-      - {label: "Порядок (weight)", name: "weight", widget: "number", default: 10}
-      - {label: "Черновик", name: "draft", widget: "boolean", default: false}
-      - {label: "Текст страницы", name: "body", widget: "markdown"}
+      - {label: "Текст", name: "body", widget: "markdown"}

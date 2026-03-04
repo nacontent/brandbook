@@ -1,14 +1,12 @@
 backend:
   name: git-gateway
-  branch: main # ЗАМЕНИ НА master, ЕСЛИ В GITHUB ВЕТКА НАЗЫВАЕТСЯ ТАК
-  
+  branch: main
 media_folder: "static/uploads"
 public_folder: "/uploads"
-
 collections:
   - name: "docs"
     label: "Документация"
-    folder: "content/docs" # Проверь, что папка в VS Code называется именно так
+    folder: "content/docs"
     extension: "md"
     format: "frontmatter"
     create: true

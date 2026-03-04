@@ -1,12 +1,23 @@
 <!doctype html>
-<html>
+<html lang="ru">
 <head>
   <meta charset="utf-8" />
-  <title>Admin</title>
+  <title>Админка</title>
   <link rel="stylesheet" href="https://unpkg.com/@staticcms/app@^4.0.0/dist/main.css" />
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
+  <div id="nc-root"></div>
+  
   <script src="https://unpkg.com/@staticcms/app@^4.0.0/dist/static-cms-app.js"></script>
+  
+  <script>
+    // Если после входа всё еще пусто, этот скрипт принудительно обновит сессию
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("login", () => {
+        document.location.href = "/admin/";
+      });
+    }
+  </script>
 </body>
 </html>

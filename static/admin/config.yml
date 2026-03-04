@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   branch: main
+local_backend: true # Это позволит тестировать админку локально позже
 
 media_folder: "static/uploads"
 public_folder: "/uploads"

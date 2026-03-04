@@ -7,19 +7,6 @@
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-  <div id="error-display" style="color: red; padding: 20px; font-family: sans-serif;"></div>
-
   <script src="https://unpkg.com/@staticcms/app@^4.0.0/dist/static-cms-app.js"></script>
-  
-  <script>
-    // Ловим ошибки инициализации
-    window.addEventListener('error', function(event) {
-      document.getElementById('error-display').innerHTML = 'Ошибка: ' + event.message;
-    });
-
-    window.netlifyIdentity.on("login", () => {
-      document.location.href = "/admin/";
-    });
-  </script>
 </body>
 </html>

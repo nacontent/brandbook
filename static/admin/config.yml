@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main # или master
+  branch: main # Убедись, что ветка в GitHub называется именно так
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
@@ -10,8 +10,7 @@ collections:
     label: "Документация"
     folder: "content/docs"
     extension: "md"
-    format: "frontmatter"
-    frontmatter_delimiter: "+++" # Важно для твоих файлов
+    format: "toml-frontmatter" # ИСПРАВЛЕНО: Теперь это разрешенное значение
     create: true
     fields:
       - {label: "Заголовок", name: "title", widget: "string"}

@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main # Если в GitHub ветка master, напиши master
+  branch: main # или master
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
@@ -11,7 +11,7 @@ collections:
     folder: "content/docs"
     extension: "md"
     format: "frontmatter"
-    frontmatter_delimiter: "+++" # КРИТИЧНО для твоих файлов
+    frontmatter_delimiter: "+++" # Важно для твоих файлов
     create: true
     fields:
       - {label: "Заголовок", name: "title", widget: "string"}

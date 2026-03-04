@@ -1,19 +1,23 @@
+# Настройка связи с сервером
 backend:
   name: git-gateway
-  branch: main
-local_backend: true # Это позволит тестировать админку локально позже
+  branch: main # Твоя ветка в GitHub
 
+# Настройка картинок
 media_folder: "static/uploads"
 public_folder: "/uploads"
 
+# Настройка контента
 collections:
   - name: "docs"
-    label: "Документация"
+    label: "База знаний (Docs)"
     folder: "content/docs"
     extension: "md"
     format: "frontmatter"
-    create: true
+    create: true # Позволяет создавать новые страницы
+    slug: "{{slug}}"
     fields:
       - {label: "Заголовок", name: "title", widget: "string"}
       - {label: "Порядок (weight)", name: "weight", widget: "number", default: 10}
-      - {label: "Текст", name: "body", widget: "markdown"}
+      - {label: "Черновик", name: "draft", widget: "boolean", default: false}
+      - {label: "Текст страницы", name: "body", widget: "markdown"}

@@ -1,15 +1,16 @@
 backend:
   name: git-gateway
-  branch: main
+  branch: main # ПРОВЕРЬ ЕЩЕ РАЗ В GITHUB: ТОЧНО main? НЕ master?
+display_url: https://courageous-capybara-7d23e2.netlify.app
 media_folder: "static/uploads"
 public_folder: "/uploads"
 collections:
   - name: "docs"
-    label: "Документация"
+    label: "Docs"
     folder: "content/docs"
     extension: "md"
     format: "frontmatter"
-    create: true
+    frontmatter_delimiter: "+++" # Чтобы он понимал твои файлы с +++
     fields:
-      - {label: "Заголовок", name: "title", widget: "string"}
-      - {label: "Текст", name: "body", widget: "markdown"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}

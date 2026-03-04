@@ -1,0 +1,14 @@
+baseURL = 'http://localhost/'
+languageCode = 'ru-ru'
+title = 'Брендбук'
+
+# Подключаем ядро Lotus Docs и компилятор стилей Bootstrap
+[module]
+  [[module.imports]]
+    path = "github.com/colinwilson/lotusdocs"
+  [[module.imports]]
+    path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
+
+# Включаем автоматическое боковое меню
+[params]
+  docsMenu = true

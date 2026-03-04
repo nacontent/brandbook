@@ -1,0 +1,32 @@
+:root {
+  /* Базовые цвета (GitLab Purple и белый) */
+  --PRIMARY-color: #7759c2; 
+  --SECONDARY-color: #fafafe; 
+  --ACCENT-color: #e24329; 
+  
+  /* Цвета текста и фона */
+  --MAIN-TEXT-color: #333333;
+  --MAIN-BG-color: #ffffff;
+  --MAIN-TITLES-TEXT-color: #171321;
+  --MAIN-TITLES-H1-color: #171321;
+  
+  /* Настройка бокового меню (Sidebar) */
+  --MENU-SECTIONS-BG-color: #fafafe;
+  --MENU-SECTIONS-ACTIVE-BG-color: #ffffff;
+  --MENU-SECTIONS-LINK-color: #333333;
+  --MENU-SECTIONS-LINK-HOVER-color: #7759c2;
+  --MENU-SECTION-ACTIVE-CATEGORY-color: #7759c2;
+  --MENU-VISITED-color: #7759c2;
+  
+  /* Верхняя панель и поиск (Header) */
+  --MENU-HEADER-BG-color: #ffffff;
+  --MENU-HEADER-BORDER-color: #e5e5e5;
+  --MENU-SEARCH-BG-color: #f0f0f0;
+  --MENU-SEARCH-BOX-color: #333333;
+  --MENU-SEARCH-BOX-ICONS-color: #7759c2;
+}
+
+/* Делаем шрифт строгим, как в Handbook */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}

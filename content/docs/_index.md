@@ -5,3 +5,7 @@ draft = false
 Добро пожаловать в рабочую зону Брендбука. Выберите раздел в меню слева.
 
 **123**
+
+**​**
+
+**​**[**https://brandbook-tau.vercel.app/docs/brand/**](https://brandbook-tau.vercel.app/docs/brand/)​

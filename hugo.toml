@@ -1,6 +1,7 @@
-baseURL = "https://courageous-capybara-7d23e2.netlify.app/"
+baseURL = "https://brandbook-tau.vercel.app/"
 languageCode = 'ru-ru'
 title = 'Брендбук'
+theme = "github.com/colinwilson/lotusdocs"
 
 # Подключаем ядро Lotus Docs и компилятор стилей Bootstrap
 [module]

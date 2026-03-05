@@ -9,6 +9,8 @@ theme = "github.com/colinwilson/lotusdocs"
   [[module.imports]]
     path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
 
-# Включаем автоматическое боковое меню
 [params]
-  docsMenu = true
+  # Включает боковое меню в разделах документации
+  docsMenu = true 
+  # Позволяет главной странице использовать всю ширину экрана
+  containerFluid = true

@@ -1,5 +1,14 @@
 +++
 title = "Главная"
-type = "docs"
-layout = "list"
+layout = "landing"
+
+[params.hero]
+  title = "Брендбук компании"
+  tagline = "Все правила, гайды и ценности в одном месте"
+  image = "img/lotus_docs_logo.svg" # Сюда можно поставить свой логотип
+  
+  [[params.hero.buttons]]
+    text = "Читать документацию"
+    link = "/docs/"
+    style = "primary"
 +++

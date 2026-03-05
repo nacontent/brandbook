@@ -1,9 +1,8 @@
 baseURL = "https://brandbook-tau.vercel.app/"
-languageCode = 'ru-ru'
-title = 'Брендбук'
+languageCode = "ru-ru"
+title = "Брендбук"
 theme = "github.com/colinwilson/lotusdocs"
 
-# Подключаем ядро Lotus Docs и компилятор стилей Bootstrap
 [module]
   [[module.imports]]
     path = "github.com/colinwilson/lotusdocs"

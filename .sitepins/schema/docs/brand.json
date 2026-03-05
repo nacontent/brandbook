@@ -1,0 +1,29 @@
+{
+  "file": "content/docs/brand/tone-of-voice.md",
+  "name": "brand",
+  "fileType": "md",
+  "fmType": "toml",
+  "template": [
+    {
+      "name": "title",
+      "label": "Title",
+      "type": "string",
+      "value": "",
+      "defaultValue": ""
+    },
+    {
+      "name": "weight",
+      "label": "Weight",
+      "type": "number",
+      "value": 0,
+      "defaultValue": 0
+    },
+    {
+      "name": "draft",
+      "label": "Draft",
+      "type": "boolean",
+      "value": false,
+      "defaultValue": false
+    }
+  ]
+}

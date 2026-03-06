@@ -1,0 +1,5 @@
+heroSection:
+  weight: 1
+  template: "hero"
+  title: "Мой крутой Брендбук"
+  subtitle: "Здесь собраны все правила нашего стиля и коммуникации."

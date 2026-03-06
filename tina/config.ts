@@ -47,6 +47,28 @@ export default defineConfig({
           },
         ],
       },
+      // === НОВЫЙ БЛОК ДЛЯ ЛЕНДИНГА ===
+      {
+        name: "landing",
+        label: "Главная страница",
+        path: "data",
+        match: {
+          include: "landing", // Указываем Тине искать файл data/landing.yaml
+        },
+        format: "yaml", // Формат файла
+        fields: [
+          {
+            type: "object",
+            name: "heroSection",
+            label: "Главный блок (Hero)",
+            fields: [
+              { type: "string", name: "title", label: "Заголовок" },
+              { type: "string", name: "subtitle", label: "Подзаголовок", ui: { component: "textarea" } },
+            ],
+          },
+        ],
+      },
+      // =================================
     ],
   },
 });

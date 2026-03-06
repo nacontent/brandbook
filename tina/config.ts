@@ -62,6 +62,8 @@ export default defineConfig({
             name: "heroSection",
             label: "Главный блок (Hero)",
             fields: [
+              { type: "number", name: "weight", label: "Порядок (weight)" },
+              { type: "string", name: "template", label: "Шаблон" },
               { type: "string", name: "title", label: "Заголовок" },
               { type: "string", name: "subtitle", label: "Подзаголовок", ui: { component: "textarea" } },
             ],

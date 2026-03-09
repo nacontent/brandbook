@@ -1,5 +1,5 @@
 ---
-title: Tone of Voice
+title: Tone of Voice 1
 ---
 
 ## 1. Наш архетип и дистанция
